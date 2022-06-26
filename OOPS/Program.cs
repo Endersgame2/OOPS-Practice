@@ -1,24 +1,25 @@
-﻿student std = new student();
-std.marks = 10;
-std.name = "Sushant";
-std.age = 21;
-
-std.details();
-
-
-
- class student { 
-  public  string name;
+﻿class student
+{
     public int age;
     public int marks;
 
-
-    // function
-    public void details()
+}
+ class programm
 {
-        Console.WriteLine("Name= {0} Age = {1} Marks ={2}",name,age,marks);
-}
 
-}
+    //static void main(string[] args)
+    {
+        student std = new student();
+        std.age = 10;
+        std.marks = 20;
 
-// CLasses practice Done
+
+        student std2 = std;
+        student std3 = std;
+        
+        std.age = 12;
+
+        Console.WriteLine(std2.age);
+
+    }
+}
